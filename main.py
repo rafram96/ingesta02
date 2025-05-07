@@ -104,10 +104,10 @@ if __name__ == "__main__":
     listar_bases_datos_y_tablas()
     
     # Luego procedemos con la exportación y subida a S3
-    if exportar_tabla_a_csv():
-        if subir_a_s3():
-            print("Ingesta completada exitosamente")
-        else:
-            print("Error en la subida a S3")
-    else:
-        print("Error en la exportación de datos")
+    # if exportar_tabla_a_csv():
+    #     if subir_a_s3():
+    #         print("Ingesta completada exitosamente")
+    #     else:
+    #         print("Error en la subida a S3")
+    # else:
+    #     print("Error en la exportación de datos")
