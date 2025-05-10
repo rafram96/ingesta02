@@ -5,14 +5,13 @@ from psycopg2 import sql
 import os
 
 db_config = {
-    'host': os.getenv('DB_HOST', 'localhost'),
-    'user': os.getenv('DB_USER', 'postgres'),
-    'password': os.getenv('DB_PASSWORD', 'postgres'),
-    'database': os.getenv('DB_NAME', 'tarea-db'),
-    'port': os.getenv('DB_PORT', '5432')
+    'host': os.getenv('localhost'),
+    'user': os.getenv('postgres'),
+    'password': os.getenv('postgres'),
+    'database': os.getenv('tarea-db'),
+    'port': os.getenv('5432')
 }
 
-# Configuración de S3
 nombreBucket = "tarea-ingesta02"
 ficheroCSV = "movimiento_inventario.csv"
 tabla_a_exportar = "movimiento_inventario"
