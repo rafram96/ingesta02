@@ -32,13 +32,9 @@ def exportar_tabla_a_csv():
             print("La tabla está vacía")
             return False
         
-        # Obtener nombres de columnas
-        col_names = [desc[0] for desc in cursor.description]
-        
         # Escribir a CSV
         with open(ficheroCSV, 'w', newline='') as archivo_csv:
             writer = csv.writer(archivo_csv)
-            writer.writerow(col_names)  # Escribir encabezados
             writer.writerows(resultados)
         
         print(f"Datos exportados correctamente a {ficheroCSV}")
