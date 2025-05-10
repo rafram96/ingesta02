@@ -4,7 +4,6 @@ import csv
 from psycopg2 import sql
 import os
 
-# Configuración de PostgreSQL (ahora usando variables de entorno)
 db_config = {
     'host': os.getenv('DB_HOST', 'localhost'),
     'user': os.getenv('DB_USER', 'postgres'),
